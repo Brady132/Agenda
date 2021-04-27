@@ -266,8 +266,84 @@ input[type="submit"]:hover{
 }
 
 
-@media (max-width: 375px){
+@media (max-width: 414px){
+    .navblock{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-content: center;
+    }
 
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        padding-bottom: 10px;
+    }
+
+    .line{
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+
+    .line li{
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    .summer{
+        margin-top: 20px;
+    }
+
+    .block{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-action{
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 375px){
+    .navblock{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-content: center;
+    }
+
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        padding-bottom: 10px;
+    }
+
+    .line{
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+
+    .line li{
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    .summer{
+        margin-top: 20px;
+    }
+
+    .block{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-action{
+        margin: 10px 0;
+    }
 }
 
 @media (max-width: 320px){
@@ -296,7 +372,11 @@ input[type="submit"]:hover{
         padding-bottom: 10px;
     }
 
+    .summer{
+        margin-top: 20px;
+    }
+
     .btn-action{
-        margin-bottom: 20px;
+        margin: 10px 0;
     }
 }
