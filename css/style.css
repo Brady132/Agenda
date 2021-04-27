@@ -165,7 +165,7 @@ input[type="submit"]:hover{
 }
 
 .line a:hover{
-    color: crimson;
+    color: #03ADB5;
 }
 
 .line li{
@@ -174,8 +174,6 @@ input[type="submit"]:hover{
 }
 
 .btn{
-    border: none;
-    padding: 10px 25px;
     background-color: #1A2435;
     border-radius: 50px;
     color: white;
@@ -184,7 +182,12 @@ input[type="submit"]:hover{
 }
 
 .btn:hover{
-    background-color: #755eb5;
+    background-color: #03ADB5;
+}
+
+.btn-create{
+    border: none;
+    padding: 10px 25px;
 }
 
 .part-princip{
@@ -202,8 +205,6 @@ input[type="submit"]:hover{
     flex-wrap: wrap;
     justify-content: center;
 }
-
-
 
 .spel-card{
     background-color: #fff;
@@ -231,6 +232,16 @@ input[type="submit"]:hover{
 }
 
 /* Planning */
+.summer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search{
+    display: inline-flex;
+}
+
 .content{
     margin-top: 30px;
     position: relative;    
@@ -246,18 +257,46 @@ input[type="submit"]:hover{
 }
 
 .btn-action{
-    color: #755eb5;
-    background-color: #fff;
+    border: 2px solid #fff;
     border-radius: 8px;
     padding: 20px 30px;
     margin: 0 10px;
-    font-size: 18px;
-    cursor: pointer;
-    border: 2px solid #fff;
     -webkit-box-shadow: 0 10px 20px -5px rgb(19 31 51 / 65%);
     box-shadow: 0 10px 20px -5px rgb(19 31 51 / 65%);
 }
 
-.btn-action:hover{
-    background-color: #b9babb;
+
+@media (max-width: 375px){
+
+}
+
+@media (max-width: 320px){
+    .navblock{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-content: center;
+    }
+
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        padding-bottom: 10px;
+    }
+
+    .line{
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+
+    .line li{
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    .btn-action{
+        margin-bottom: 20px;
+    }
 }

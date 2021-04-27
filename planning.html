@@ -1,68 +1,82 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planning</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/evo-calendar.min.css">
-    <link rel="stylesheet" href="css/evo-calendar.midnight-blue.min.css">
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <div class="navblock block">
-                <div class="nav-menu">
-                    <a href="#" class="img-logo"><img src="img/logo-nan.png" alt="logo-nan"></a>
-                    <ul class="line">
-                        <li><a href="#">Tableau de bord</a></li>
-                        <li><a href="#">Profil</a></li>
-                    </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Planning</title>
+        <link rel="shortcut icon" href="img/logo-nan.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/evo-calendar.min.css">
+        <link rel="stylesheet" href="css/evo-calendar.midnight-blue.min.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="navblock block">
+                    <div class="nav-menu">
+                        <a href="#" class="img-logo"><img src="img/logo-nan.png" alt="logo-nan"></a>
+                        <ul class="line">
+                            <li><a href="#">Tableau de bord</a></li>
+                            <li><a href="#">Profil</a></li>
+                        </ul>
+                    </div>
+                    <a href="#"><button type="button" class="btn btn-create">Nouveau</button></a>
                 </div>
-                <a href="#"><button type="button" class="btn">Nouveau</button></a>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
-    <div class="block">
-        <h2>PLANNING Front-End</h2>
-    </div>
+        <div class="block summer">
+            <h2>PLANNING Front-End</h2>
+            <!--
+            <div class="search">
+                <form class="search-form">
+                    <input type="text" placeholder="Rechercher une tâche">
+                </form>
+                <div class="search-img">
+                    <a href="#">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDY0IDY0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Zz48bGluZWFyR3JhZGllbnQgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBpZD0iTmV3X0dyYWRpZW50X1N3YXRjaF8xIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjE3IiB4Mj0iMTciIHkxPSItMy45NTUiIHkyPSI2Ny4wMDciPjxzdG9wIHN0b3Atb3BhY2l0eT0iMSIgc3RvcC1jb2xvcj0iI2ZmZjMzYiIgb2Zmc2V0PSIwIj48L3N0b3A+PHN0b3Agc3RvcC1vcGFjaXR5PSIxIiBzdG9wLWNvbG9yPSIjZWQ2ODNjIiBvZmZzZXQ9IjAiPjwvc3RvcD48c3RvcCBzdG9wLW9wYWNpdHk9IjEiIHN0b3AtY29sb3I9IiNmMzkwM2YiIG9mZnNldD0iMCI+PC9zdG9wPjxzdG9wIHN0b3Atb3BhY2l0eT0iMSIgc3RvcC1jb2xvcj0iI2ZkYzcwYyIgb2Zmc2V0PSIwIj48L3N0b3A+PHN0b3Agc3RvcC1vcGFjaXR5PSIxIiBzdG9wLWNvbG9yPSIjZmVlNzJlIiBvZmZzZXQ9IjAuMDE0Ij48L3N0b3A+PHN0b3Agc3RvcC1vcGFjaXR5PSIxIiBzdG9wLWNvbG9yPSIjZmRjYTEwIiBvZmZzZXQ9IjAuMDMwODg4MDMwODg4MDMwODkiPjwvc3RvcD48c3RvcCBzdG9wLW9wYWNpdHk9IjEiIHN0b3AtY29sb3I9IiNmZWQ1MWIiIG9mZnNldD0iMC4wNDIiPjwvc3RvcD48c3RvcCBzdG9wLW9wYWNpdHk9IjEiIHN0b3AtY29sb3I9IiMxYTI0MzUiIG9mZnNldD0iMC4wNTc5MTUwNTc5MTUwNTc5MiI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgaWQ9Ik5ld19HcmFkaWVudF9Td2F0Y2hfMS00IiB4MT0iMzIiIHgyPSIzMiIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhsaW5rOmhyZWY9IiNOZXdfR3JhZGllbnRfU3dhdGNoXzEiIHkxPSItMy45NTUiIHkyPSI2Ny4wMDciPjwvbGluZWFyR3JhZGllbnQ+PGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBpZD0ic2VhcmNoLWRhdGUtY2FsZW5kYXItcGxhbi1zY2hlZHVsZSI+PGcgZmlsbD0idXJsKCNOZXdfR3JhZGllbnRfU3dhdGNoXzEpIj48cGF0aCBkPSJtMjggMjlhMTEgMTEgMCAxIDAgLTExIDExIDExLjAxMyAxMS4wMTMgMCAwIDAgMTEtMTF6bS0yMCAwYTkgOSAwIDEgMSA5IDkgOS4wMSA5LjAxIDAgMCAxIC05LTl6IiBmaWxsPSIiPjwvcGF0aD48cGF0aCBkPSJtMTYgNTBoMnYyaC0yeiIgZmlsbD0iIj48L3BhdGg+PHBhdGggZD0ibTE2IDU0aDJ2NGgtMnoiIGZpbGw9IiI+PC9wYXRoPjwvZz48cGF0aCBkPSJtNTkgNmgtM3YtMWEzIDMgMCAwIDAgLTYgMHYxaC04di0xYTMgMyAwIDAgMCAtNiAwdjFoLTh2LTFhMyAzIDAgMCAwIC02IDB2MWgtM2EzLjAwOSAzLjAwOSAwIDAgMCAtMyAzdjUuMDVhMTQuOTkyIDE0Ljk5MiAwIDAgMCAtMiAyOS42NXYyLjNoLTFhMSAxIDAgMCAwIC0xIDF2MTBhNSA1IDAgMCAwIDEwIDB2LTloMzdhMy4wMDkgMy4wMDkgMCAwIDAgMy0zdi0zNmEzLjAwOSAzLjAwOSAwIDAgMCAtMy0zem0tNy0xYTEgMSAwIDAgMSAyIDB2NGExIDEgMCAwIDEgLTIgMHptLTE0IDBhMSAxIDAgMCAxIDIgMHY0YTEgMSAwIDAgMSAtMiAwem0tMTQgMGExIDEgMCAwIDEgMiAwdjRhMSAxIDAgMCAxIC0yIDB6bS0yMCAyNGExMyAxMyAwIDEgMSAxMyAxMyAxMy4wMTIgMTMuMDEyIDAgMCAxIC0xMy0xM3ptMjYuMjYgN2ExNS4xNDcgMTUuMTQ3IDAgMCAwIDEuNDQtNGguM3Y0em0xLjc0IDJ2NGgtNy41NWExNS4wNzQgMTUuMDc0IDAgMCAwIDQuNTItNHptLS4wNS04Yy4wMi0uMzMuMDUtLjY2LjA1LTFhMTQuODE5IDE0LjgxOSAwIDAgMCAtLjMtM2guM3Y0em0tLjgzLTZhMTQuODQgMTQuODQgMCAwIDAgLTIuMTUtNGgzLjAzdjR6bS0xMy4xMiAxOS45NXYyLjA1aC0ydi0yLjA1Yy4zMy4wMi42Ni4wNSAxIC4wNXMuNjctLjAzIDEtLjA1em0yIDEzLjA1YTMgMyAwIDAgMSAtNiAwdi05aDZ6bTQwLTEyYTEgMSAwIDAgMSAtMSAxaC0zOXYtMmgzN2ExIDEgMCAwIDAgMS0xdi0yNGExIDEgMCAwIDAgLTEtMWgtMjkuODRhMTQuODIzIDE0LjgyMyAwIDAgMCAtMi43MS0yaDM1LjU1em0tMjQtMTl2NGgtMnYtNHptLTItMnYtNGgydjR6bTIgOHY0aC0ydi00em0wIDZ2NGgtMnYtNHptNC0xMnY0aC0ydi00em0tMi0ydi00aDJ2NHptMiA4djRoLTJ2LTR6bTAgNnY0aC0ydi00em00LTEydjRoLTJ2LTR6bS0yLTJ2LTRoMnY0em0yIDh2NGgtMnYtNHptMCA2djRoLTJ2LTR6bTQtMTJ2NGgtMnYtNHptLTItMnYtNGgydjR6bTIgOHY0aC0ydi00em0wIDZ2NGgtMnYtNHptNC0xMnY0aC0ydi00em0tMi0ydi00aDJ2NHptMiA4djRoLTJ2LTR6bTAgNnY0aC0ydi00em00LTEydjRoLTJ2LTR6bS0yLTJ2LTRoMnY0em0yIDh2NGgtMnYtNHptMCA2djRoLTJ2LTR6bTQtMjRoLTQydi01YTEgMSAwIDAgMSAxLTFoM3YxYTMgMyAwIDAgMCA2IDB2LTFoOHYxYTMgMyAwIDAgMCA2IDB2LTFoOHYxYTMgMyAwIDAgMCA2IDB2LTFoM2ExIDEgMCAwIDEgMSAxeiIgZmlsbD0idXJsKCNOZXdfR3JhZGllbnRfU3dhdGNoXzEtNCkiIGRhdGEtb3JpZ2luYWw9InVybCgjTmV3X0dyYWRpZW50X1N3YXRjaF8xLTQpIiBzdHlsZT0iIj48L3BhdGg+PC9nPjwvZz48L3N2Zz4=" width="25"/>
+                    </a>
+                </div>
+            </div> -->
+        </div>
 
-    <div class="block content">
-        <div id="calendar"></div>
-    </div>
+        <div class="block content">
+            <div id="calendar"></div>
+        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-    <script src="evo-calendar.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+        <script src="evo-calendar.min.js"></script>
 
-    <script>
-        $(document).ready(function() {
-            $('#calendar').evoCalendar({
-                language: 'fr',
-                theme: 'Midnight Blue',
-                calendarEvents: [
-                    {
-                        id: 'Event1', // Event's ID (required)
-                        name: "Correction de l'exercice", // Event name (required)
-                        date: "April/26/2021", // Event date (required)
-                        description:"Bonjour cher tous. Travail insuffisant pour cette semaine.",
-                        type: "holiday", // Event type (required)
-                    },
-                    {
-                        name: "Cours à NaN",
-                        date: ["April/26/2021", "April/28/2021"], // Date range
-                        description: "Formation en Développement web Front-End", // Event description (optional)
-                        type: "event",
-                        color: "#63d867" // Event custom color (optional)
-                    }
-                ]
+        <script>
+            $(document).ready(function() {
+                $('#calendar').evoCalendar({
+                    language: 'fr',
+                    theme: 'Midnight Blue',
+                    'todayHighlight': true,
+                    calendarEvents: [
+                        {
+                            id: 'Event1', // Event's ID (required)
+                            name: "Correction de l'exercice", // Event name (required)
+                            date: "April/26/2021", // Event date (required)
+                            description:"Bonjour cher tous. Travail insuffisant pour cette semaine.",
+                            type: "holiday", // Event type (required)
+                        },
+                        {
+                            name: "Cours à NaN",
+                            date: ["April/26/2021", "April/28/2021"], // Date range
+                            description: "Formation en Développement web Front-End", // Event description (optional)
+                            type: "event",
+                            color: "#63d867" // Event custom color (optional)
+                        }
+                    ]
+                })
             })
-        })
-    </script>
+        </script>
 
-    <div class="block action-buttons">
-        <a href="#"><button class="btn-action">Ajouter</button></a>
-        <a href="#"><button class="btn-action">Supprimer</button></a>
-    </div>
-</body>
+        <div class="block action-buttons">
+            <a href="#"><button class="btn btn-action">Modifier</button></a>
+            <a href="#"><button class="btn btn-action">Supprimer</button></a>
+        </div>
+        
+    </body>
 </html>
